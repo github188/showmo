@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exchanger", "exchanger.vcproj", "{09965951-9694-422C-B4C7-153B8BF57CB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_MDd|Win32 = Debug_MDd|Win32
+		Debug_MTd|Win32 = Debug_MTd|Win32
+		Release_MD|Win32 = Release_MD|Win32
+		Release_MT|Win32 = Release_MT|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09965951-9694-422C-B4C7-153B8BF57CB4}.Debug_MDd|Win32.ActiveCfg = Debug_MDd|Win32
+		{09965951-9694-422C-B4C7-153B8BF57CB4}.Debug_MDd|Win32.Build.0 = Debug_MDd|Win32
+		{09965951-9694-422C-B4C7-153B8BF57CB4}.Debug_MTd|Win32.ActiveCfg = Debug_MTd|Win32
+		{09965951-9694-422C-B4C7-153B8BF57CB4}.Debug_MTd|Win32.Build.0 = Debug_MTd|Win32
+		{09965951-9694-422C-B4C7-153B8BF57CB4}.Release_MD|Win32.ActiveCfg = Release_MD|Win32
+		{09965951-9694-422C-B4C7-153B8BF57CB4}.Release_MD|Win32.Build.0 = Release_MD|Win32
+		{09965951-9694-422C-B4C7-153B8BF57CB4}.Release_MT|Win32.ActiveCfg = Release_MT|Win32
+		{09965951-9694-422C-B4C7-153B8BF57CB4}.Release_MT|Win32.Build.0 = Release_MT|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:gravity="center_vertical">
+    <ImageView  
+        android:id="@+id/menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/drawable_radio_btn"/>
+	<TextView android:id="@+id/menu_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    style="@style/style_showmo_text_tiny"
+	    android:text="设备管理"
+	    android:textColor="@color/color_primary_black"
+	    />
+</LinearLayout>

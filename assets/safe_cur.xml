@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+当前用户选择的安全级别，程序加载过程的时候读取，
+编写一个拥有safe_type各个属性的类，读取这个文件的当前safe
+选择然后根据safe_list的值直接生成类对象保存到system
+用户使用的时候直接读取当前配置值
+-->
+<current_safe_set name="H" />

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <LinearLayout android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/tv_alist_type"
+            style="@style/style_showmo_text_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:text="移动侦测"
+            android:textColor="@color/color_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/style_showmo_text_tiny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_item_time"
+                android:textColor="@color/color_black" />
+
+            <TextView
+                android:id="@+id/tv_alist_time"
+                style="@style/style_showmo_text_tiny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2010-01-23 08:22:22"
+                android:textColor="@color/color_black" />
+            <!--
+                 <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black"
+                android:text="@string/alarm_item_state"
+                android:layout_marginLeft="14dp"
+                style="@style/style_showmo_text_tiny"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black"
+                style="@style/style_showmo_text_tiny"
+                android:text="未下载"/>-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="@null"
+        android:layout_marginRight="10dp" >
+
+        <Button
+            android:id="@+id/btn_alist_download"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/button_selector"
+            android:paddingRight="4dp"
+            android:text="查看图片" >
+        </Button>
+		<ImageView android:id="@+id/alarm_downloadImg"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:visibility="gone"
+		    android:src="@drawable/start_download"/>
+        <ProgressBar
+            android:id="@+id/alarm_img_download_progress"
+            android:layout_width="60dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progress="30"
+            android:progressDrawable="@drawable/progressbar_layer_drawable"
+            android:secondaryProgress="0"
+            android:visibility="gone" />
+    </FrameLayout>
+  </LinearLayout>
+</LinearLayout>

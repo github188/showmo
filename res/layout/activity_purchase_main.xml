@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/titlebar_common"
+       />
+    <ProgressBar 
+        android:id="@+id/purchase_load_progress"
+        android:layout_width="match_parent"
+        android:indeterminateOnly="false"
+       android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+       android:progressDrawable="@drawable/progressbar_layer_drawable"
+        android:layout_height="3dp"
+        android:progress="30"
+        />
+    <WebView 
+        android:id="@+id/purchase_main_link"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        />
+
+</LinearLayout>

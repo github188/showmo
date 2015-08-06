@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar_common" />
+
+    <EditText
+        android:id="@+id/problem_feed_back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:hint="@string/more_problem_title_hint"
+        android:imeOptions="actionDone"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/problem_describ"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:gravity="top|left"
+        android:background="@drawable/drawable_multi_edit"
+        android:hint="@string/more_problem_content_hint"
+        android:inputType="textMultiLine"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/problem_btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0"
+        android:background="@drawable/btn_login_selector"
+        android:text="@string/more_send"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/lay_reset_bar"
+        layout="@layout/titlebar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lay_reset_bar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay_reset_bar"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:text="@string/input_your_account_new_psw"
+                android:textColor="#000000"
+                style="@style/style_showmo_text_medium" />
+
+            <!-- 输入账号 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_img_user" />
+
+                <EditText
+                    android:id="@+id/et_reset_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:digits="@string/filter_for_account_and_psw"
+                    android:hint="@string/input_account"
+                    android:singleLine="true"
+                    android:textColorHint="#7a7a7a"
+                    style="@style/style_showmo_text_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c0c0c0" >
+            </LinearLayout>
+
+            <!-- 输入旧密码 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/login_img_psw" />
+
+                <com.showmo.widget.PasswordText
+                    android:id="@+id/et_reset_input_old_psw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="@string/filter_for_account_and_psw"
+                    android:hint="@string/input_old_psw"
+                    android:inputType="textPassword"
+                    android:maxLength="18"
+                    style="@style/style_showmo_text_medium"
+                    android:textColorHint="#7a7a7a" />
+
+                <CheckBox
+                    android:id="@+id/cb_see_psw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/btn_see_psw_selector"
+                    android:button="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c0c0c0" >
+            </LinearLayout>
+
+            <!-- 输入密码 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/login_img_psw" />
+
+                <com.showmo.widget.PasswordText
+                    android:id="@+id/et_reset_psw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="@string/filter_for_account_and_psw"
+                    android:hint="@string/input_new_psw"
+                    android:inputType="textPassword"
+                    android:maxLength="18"
+                    style="@style/style_showmo_text_medium"
+                    android:textColorHint="#7a7a7a" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c0c0c0" >
+            </LinearLayout>
+
+            <!-- 再次输入密码 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/register_psw_re" />
+
+                <com.showmo.widget.PasswordText
+                    android:id="@+id/et_reset_psw_re"
+                    style="@style/style_passwordtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:digits="@string/filter_for_account_and_psw"
+                    android:hint="@string/input_new_psw_again" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c0c0c0" >
+            </LinearLayout>
+
+            <!-- 修改 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp" >
+
+                <Button
+                    android:id="@+id/btn_reset_mod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/btn_login_selector"
+                    android:text="@string/modify"
+                    android:textColor="#FFFFFF"
+                    style="@style/style_showmo_text_medium" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_img_city_background" />
+    -->
+
+</RelativeLayout>

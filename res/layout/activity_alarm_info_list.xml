@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar_aralm" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_btn_disable" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.showmo.widget.swipemenulistview.SwipeMenuListView
+            android:id="@+id/lv_ainfo_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tv_ainfo_no_alarm_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/sorry_your_search_did_not_match_any_alarm_info"
+            android:textColor="@android:color/black"
+            style="@style/style_showmo_text_medium"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

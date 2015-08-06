@@ -1,0 +1,315 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="com.showmo.activity.deviceManage.DeviceSettingActivity" >
+	<include
+        android:id="@+id/lay_dev_bar"
+        layout="@layout/titlebar_common" />
+	<RelativeLayout 
+	    android:visibility="gone"
+	    android:layout_width="match_parent"
+	   android:layout_height="60dp">
+	    <TextView 
+	        android:textColor="@color/color_pref_item_title" 
+	    android:paddingLeft="20dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_centerVertical="true"
+	    android:id="@+id/dev_installation_way"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/dev_installation_way"
+	    style="@style/style_showmo_text_medium"
+	   
+	  />
+	 <RadioGroup
+	     android:layout_toRightOf="@id/dev_installation_way"
+        android:id="@+id/dev_operate_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+	 
+        <RadioButton
+            android:textColor="@color/color_pref_item_title" 
+            android:layout_alignParentRight="true"
+            android:id="@+id/radio_top_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/top_loading"
+           	android:layout_gravity="center"
+            android:button="@drawable/drawable_radio_btn"/>
+
+      
+
+        <RadioButton
+            android:textColor="@color/color_pref_item_title" 
+             android:layout_alignParentRight="true"
+            android:id="@+id/radio_wall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+          	android:layout_gravity="center"
+           	android:text="@string/wall"
+            android:button="@drawable/drawable_radio_btn"/>
+        
+    </RadioGroup>
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	<RelativeLayout 
+	    android:id="@+id/rel_dev_delete"
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:orientation="horizontal"
+	    android:background="#ffffff">
+	    <TextView 
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        style="@style/style_showmo_text_medium"
+	       	android:paddingLeft="20dp"
+	       	android:text="@string/delete_dev" />
+	   <ImageView 
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/ic_delete_orange"/>
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" 
+	   />
+	<RelativeLayout 
+	    android:id="@+id/re_dev_name"
+	    android:layout_width="match_parent"
+	   android:layout_height="60dp"
+	    android:orientation="horizontal"
+	     android:background="#ffffff">
+	    <TextView 
+	        android:id="@+id/tv_te_name"
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	         style="@style/style_showmo_text_medium"
+	       	android:paddingLeft="20dp"
+	       	android:text="@string/dev_rename" />
+	  
+	   <ImageView 
+	       android:id="@+id/img_set_dev_rename"
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/arrow_right"/>
+	   <TextView 
+	         android:layout_centerVertical="true"
+	         android:hint="@string/dve_name"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@id/img_set_dev_rename"
+	        android:gravity="right"
+	        android:id="@+id/set_dve_name"/>
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" 
+	     />
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" 
+	    android:layout_marginTop="20dp"/>
+	<RelativeLayout 
+	     android:id="@+id/rel_dev_alarmswitch"
+	    android:layout_width="match_parent"
+	    android:background="#ffffff"
+	    android:layout_height="60dp"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        style="@style/style_showmo_text_medium"
+	       	android:paddingLeft="20dp"
+	       	android:text="@string/alarmswitch" />
+	   <ImageView 
+	       android:id="@+id/img_set_dev_alarm_switch"
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/switch_on"/>
+	    <TextView
+	        android:textColor="@color/color_light_orange" 
+	         android:layout_centerVertical="true"
+	         android:text="@string/switch_state"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       android:visibility="gone"
+	        android:layout_alignParentRight="true"
+	        android:id="@+id/switch_state"/>
+	</RelativeLayout>
+
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	<RelativeLayout 
+	    android:id="@+id/light_switch"
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:orientation="horizontal"
+	     android:background="#ffffff">
+	    <TextView 
+	        android:id="@+id/light_switch_state"
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	         style="@style/style_showmo_text_medium"
+	       	android:paddingLeft="20dp"
+	       	android:text="@string/light_switch" />
+	  
+	   <ImageView 
+	       android:id="@+id/img_set_dev_switch"
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/switch_on"/>
+  <TextView
+	        android:textColor="@color/color_light_orange" 
+	         android:layout_centerVertical="true"
+	         android:text="@string/light_switch_state_get_err"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       android:visibility="gone"
+	        android:layout_alignParentRight="true"
+	        android:id="@+id/brightness_state"/>
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	<RelativeLayout 
+	    android:id="@+id/device_talk_volume"
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:orientation="horizontal"
+	     android:background="#ffffff">
+	    <TextView 
+	        android:id="@+id/device_talk_volume_text"
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	       style="@style/style_showmo_text_medium"
+	       	android:paddingLeft="20dp"
+	       	android:text="@string/device_talk_volume" />
+	   
+	   <ImageView 
+	       android:id="@+id/img_set_dev_volume"
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/arrow_right"/>
+	     <TextView
+	        android:textColor="@color/color_light_orange" 
+	         android:layout_centerVertical="true"
+	         android:text="@string/volume_state"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       android:visibility="gone"
+	        android:layout_alignParentRight="true"
+	        android:id="@+id/volume_state"/>
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" 
+	    android:layout_marginTop="20dp"/>
+	<RelativeLayout 
+	    android:id="@+id/device_wifi_info"
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:orientation="horizontal"
+	     android:background="#ffffff">
+	    <TextView 
+	        android:id="@+id/device_wifi_info_text"
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	         style="@style/style_showmo_text_medium"
+	       	android:paddingLeft="20dp"
+	       	android:text="@string/device_info" />
+	   
+	   <ImageView 
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/arrow_right"/>
+	    
+	</RelativeLayout>
+		<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	<RelativeLayout 
+	    android:id="@+id/rel_dev_firmware_update"
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:orientation="horizontal"
+	     android:background="#ffffff">
+	    <TextView 
+	        android:id="@+id/firmware_update"
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	         style="@style/style_showmo_text_medium"
+	       	android:paddingLeft="20dp"
+	       	android:text="@string/firmware_update" />
+	   
+	     <ImageView 
+	         android:layout_alignParentRight="true"
+	         android:id="@+id/tip_point"
+	         android:layout_alignParentTop="true"
+	         android:background="@drawable/red_point"
+	         android:visibility="gone"
+			 android:layout_marginTop="10dp"
+			 android:layout_marginRight="10dp"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+	        />
+	  
+	    <TextView 
+	         android:layout_centerVertical="true"
+	         android:hint="@string/current_firmware_version"
+	       android:layout_width="wrap_content"
+	       android:gravity="right"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	     	android:layout_marginRight="20dp"
+	        android:id="@+id/set_dve_firmware_version"/>
+	    
+	</RelativeLayout>
+	
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+</LinearLayout>

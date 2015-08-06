@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/lay_bar"
+        layout="@layout/titlebar_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_bar"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" >
+
+        <TextView
+            android:id="@+id/tv_veri_send_remind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:text="@string/setup_psw"
+            android:textColor="#000000"
+            style="@style/style_showmo_text_medium" />
+
+        <!-- 输入账号 -->
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/veri_input" />
+
+            <EditText
+                android:id="@+id/et_veri_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/input_verification_code"
+                android:inputType="number"
+                android:maxLength="6"
+                style="@style/style_showmo_text_medium"
+                android:textColorHint="#7a7a7a" />
+
+            <Button
+                android:id="@+id/btn_veri_recover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@null"
+                android:text="@string/recover"
+                android:textColor="#6699FF"
+                style="@style/style_showmo_text_medium" />
+        </LinearLayout> -->
+
+ <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/login_img_psw" />
+
+            <com.showmo.widget.PasswordText
+                android:id="@+id/et_register_psw"
+                style="@style/style_passwordtext"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:digits="@string/filter_for_account_and_psw"
+                 />
+
+            <CheckBox
+                android:id="@+id/cb_see_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/btn_see_psw_selector"
+                android:button="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c0c0c0" >
+        </LinearLayout>
+
+      <!--   再次输入密码 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_psw_re" />
+
+            <com.showmo.widget.PasswordText
+                android:id="@+id/et_register_psw_re"
+                style="@style/style_passwordtext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:digits="@string/filter_for_account_and_psw"
+                android:hint="@string/input_psw_again" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c0c0c0" >
+        </LinearLayout>
+
+        <!-- 修改 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" >
+
+            <Button
+                android:id="@+id/btn_veri_comfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_login_selector"
+                android:text="@string/confirm"
+                android:textColor="#FFFFFF"
+                style="@style/style_showmo_text_medium" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_img_city_background" />
+
+</RelativeLayout>

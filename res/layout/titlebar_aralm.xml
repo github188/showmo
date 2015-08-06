@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:background="@color/color_pref_screen_background"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_main_menu_selector"
+        android:drawableLeft="@drawable/bar_arrow_white_left"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/back"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_showmo_text_large" />
+
+    <TextView
+        android:id="@+id/tv_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/dimen_showmo_text_large" />
+
+    <Button
+        android:id="@+id/btn_ainfo_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:text="@string/filter"
+        android:textColor="@android:color/white" 
+         android:textSize="@dimen/dimen_showmo_text_large"/>
+
+</RelativeLayout>

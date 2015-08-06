@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout="@layout/preference_screen"
+    android:title="@string/preference_title" >
+
+    <CheckBoxPreference
+        android:key="wifi_check"
+        android:summary="@string/wifi_summary"
+        android:title="@string/wifi_title" />
+    <CheckBoxPreference android:key="screen_off_strategy"
+        android:summary="@string/screen_strategy_summary"
+        android:title="@string/screen_strategy_title"
+        android:defaultValue="true"
+        />
+    <CheckBoxPreference android:key="xg_push_switch"
+        android:summary="@string/xg_push_summary"
+        android:title="@string/xg_push_title"
+        android:defaultValue="true"
+        />
+
+</PreferenceScreen>

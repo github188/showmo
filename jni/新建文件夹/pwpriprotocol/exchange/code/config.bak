@@ -1,0 +1,21 @@
+#PLATFORM = DM8127
+#CROSS	= arm-arago-linux-gnueabi-
+
+#PLATFORM = HI3518
+#CROSS  = arm-hisiv100nptl-linux-
+
+#PLATFORM = unknown-linux-uclibcgnueabi
+#CROSS  = arm-unknown-linux-uclibcgnueabi-
+
+PLATFORM = Linux
+CROSS	=
+CC	= @echo " GCC	$@"; $(CROSS)gcc
+CPP	= @echo " G++	$@"; $(CROSS)g++
+LD	= @echo " LD	$@"; $(CROSS)ld
+AR	= @echo " AR	$@"; $(CROSS)ar
+RM	= @echo " RM	$@"; rm -f
+STRIP = @echo " STRIP $@"; $(CROSS)strip
+
+LDFLAGS += -LLib/$(PLATFORM) -lpthread
+LIBDIR = Lib/$(PLATFORM)/
+BINDIR = Bin/$(PLATFORM)/

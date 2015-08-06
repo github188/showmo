@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_device_item_width"
+    android:layout_height="@dimen/dimen_device_item_height"
+    android:layout_margin="2dp"
+    android:background="@drawable/selector_device"
+    android:padding="2dp" >
+
+    <FrameLayout
+        android:id="@+id/device_name_item"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_bg_device_name" >
+
+        <TextView
+            android:id="@+id/device_name_text"
+            style="@style/style_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="no name" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/device_tiny_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/device_name_item"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/device_online_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@id/device_tiny_img"
+        android:layout_alignTop="@id/device_tiny_img"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

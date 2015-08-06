@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pwattr="http://schemas.android.com/apk/res/com.showmo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/titlebar_common" />
+
+    <TextView
+        android:id="@+id/add_device_config_tip"
+        style="@style/style_add_device_tip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_device_config_tip" />
+
+    <com.showmo.widget.PwRoundProgressBar
+        android:id="@+id/add_device_config_progress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        pwattr:roundColor="#3fafafaf"
+        pwattr:roundProgressColor="@color/color_deep_orange"
+        pwattr:roundWidth="5dip"
+        pwattr:textColor="@color/color_deep_orange"
+        pwattr:textSize="15sp" />
+    <!--
+     	<TextView android:id="@+id/add_device_count_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/add_device_config_device_counter"
+	    android:textColor="@color/color_adddevice_tip"
+	   	android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="10dp"
+	    android:textSize="@dimen/dimen_showmo_text_small"
+	    />
+    -->
+
+    <LinearLayout
+        android:id="@+id/info_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="#afffffff" >
+
+        <TextView
+            android:id="@+id/presearch_text"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="fdsfafsdaf\ndaaffdafsf" />
+
+        <TextView
+            android:id="@+id/search_text"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="fdsfafsdaf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_device_config_user_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/expand_page_cur_item" >
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                android:text="@string/add_device_config_psw_operate_tip1"
+                android:textColor="@color/color_add_device_tip"
+                android:textSize="@dimen/dimen_showmo_text_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/expand_page_cur_item" >
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                android:text="@string/add_device_config_psw_operate_tip2"
+                android:textColor="@color/color_add_device_tip"
+                android:textSize="@dimen/dimen_showmo_text_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/expand_page_cur_item" >
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                android:text="@string/add_device_config_psw_operate_tip3"
+                android:textColor="@color/color_add_device_tip"
+                android:textSize="@dimen/dimen_showmo_text_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

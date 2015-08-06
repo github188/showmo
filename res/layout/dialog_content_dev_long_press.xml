@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/dev_operate_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/radio_btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:textColor="@color/color_black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"
+            android:text="@string/dev_delete"
+           	android:gravity="left"
+            android:button="@drawable/drawable_radio_btn"/>
+
+        <FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+
+        <RadioButton
+            android:id="@+id/radio_btn_rename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:textColor="@color/color_black"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+           	android:text="@string/dev_rename"
+            android:button="@drawable/drawable_radio_btn"/>
+    </RadioGroup>
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/dev_delete"
+            android:textColor="#000000"
+            android:paddingLeft="10dp"
+            style="@style/style_showmo_text_medium" />
+
+        <FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/dev_rename"
+            android:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            style="@style/style_showmo_text_medium" />
+    </LinearLayout> -->
+
+</LinearLayout>

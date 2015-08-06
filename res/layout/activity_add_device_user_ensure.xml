@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/titlebar_common" />
+
+    <ImageView
+        android:id="@+id/add_device_ensure_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:src="@drawable/add_logo" />
+
+    <TextView
+        android:id="@+id/add_device_ensure_can_not_get_tip"
+        style="@style/style_showmo_text_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="30dp"
+        android:background="@null"
+        android:text="@string/add_device_ensure_can_not_get_tip"
+        android:textColor="@color/color_font_orange"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/add_device_config_user_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/expand_page_cur_item" >
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                android:text="@string/add_device_ensure_tip1"
+                style="@style/style_showmo_text_small"
+                android:textColor="@color/color_add_device_tip" />
+        </LinearLayout>
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/expand_page_cur_item" >
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                style="@style/style_showmo_text_small"
+                android:textColor="@color/color_add_device_tip"
+                android:text="@string/add_device_ensure_tip2" />
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_user_sure_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_login_selector"
+        android:text="@string/add_device_ensure_next"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/dimen_showmo_text_medium" 
+        />
+
+</LinearLayout>

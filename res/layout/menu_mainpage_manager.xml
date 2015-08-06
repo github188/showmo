@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.showmo"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.showmo.widget.PwTipButton
+        android:id="@+id/munu_item_device_manager"
+        style="@style/style_main_page_menu_item"
+        app:tip_src="@drawable/red_point"
+        app:content_text="@string/menu_device_manager"
+        android:layout_marginTop="8dp"/>
+
+    <FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+
+<!--     <Button
+        android:id="@+id/munu_item_safe_center"
+        style="@style/style_main_page_menu_item"
+        android:textColor="@color/color_primary_black"
+        android:text="@string/menu_safe_center" />
+
+    <FrameLayout style="@style/style_main_page_menu_item_sparate_line" /> -->
+
+    <Button
+        android:id="@+id/munu_item_set"
+        style="@style/style_main_page_menu_item"
+        android:textColor="@color/color_primary_black"
+        android:text="@string/menu_set" />
+
+    <FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+
+    <Button
+        android:id="@+id/munu_item_more"
+        style="@style/style_main_page_menu_item"
+        android:textColor="@color/color_primary_black"
+        android:text="@string/menu_more" />
+
+</LinearLayout>

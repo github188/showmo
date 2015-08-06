@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="com.showmo.activity.deviceManage.DeviceOpenVedioVolumeActivity" >
+
+   <include
+        android:id="@+id/lay_dev_bar"
+        layout="@layout/titlebar_common" />
+ <!--  <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	      >
+	    <TextView 
+	        android:textColor="@color/color_pref_item_title" 	        
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textSize="15sp"
+	       	android:paddingLeft="20dp"
+	       	android:id="@+id/text1"
+	       	android:text="@string/device_current_volume_state" />
+	     <TextView        
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textSize="12sp"
+	       	android:layout_toRightOf="@id/text1"
+	       	android:id="@+id/volume_switch_state"
+	       	android:text="@string/switch_on" />
+	 
+	</RelativeLayout> -->
+  <FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	
+	<RelativeLayout 
+	    android:id="@+id/re_dev_name"
+	    android:layout_width="match_parent"
+	   android:layout_height="60dp"
+	   android:background="#ffffff">
+	    <TextView 
+	        android:textColor="@color/color_pref_item_title" 
+	        
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	       	android:paddingLeft="20dp"
+	       	style="@style/style_showmo_text_medium"
+	       	android:id="@+id/text"
+	       	android:text="@string/device_current_volume" />
+	    <CheckBox 
+	        android:id="@+id/open_volum_switch"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/pw_switch_selector"  
+	        android:layout_marginRight="20dp"
+	        android:button="@null"
+	        
+	        />
+	     <!-- <ImageView
+	       
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textSize="12sp"
+	       	android:layout_alignParentRight="true"
+	        android:paddingRight="20dp"   
+	       	android:id="@+id/current_volume_switch_state"
+	       	android:src="@drawable/switch_on"/> -->
+	 
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	<!--  <SeekBar
+	     android:layout_marginTop="3dp"
+	     android:layout_marginBottom="10dp"
+        android:id="@+id/ctrl_volume_seekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:maxHeight="4.0dip"
+        android:minHeight="4.0dip"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"   
+        android:layout_gravity="center"  
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/seekbar_thumb_normal" />
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+ -->
+</LinearLayout>

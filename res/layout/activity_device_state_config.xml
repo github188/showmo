@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar_common" />
+
+    <FrameLayout style="@style/more_seperator_line" />
+
+    <RelativeLayout
+        android:id="@+id/goto_voice_config"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/more_item_text"
+            android:text="@string/stateconfig_voice_config"
+            android:textColor="@color/color_primary_black" />
+
+        <ImageView style="@style/more_item_goto" />
+    </RelativeLayout>
+
+    <FrameLayout style="@style/more_seperator_line" />
+
+    <RelativeLayout
+        android:id="@+id/goto_device_state"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/more_item_text"
+            android:text="@string/stateconfig_device_state"
+            android:textColor="@color/color_primary_black" />
+
+        <ImageView style="@style/more_item_goto" />
+    </RelativeLayout>
+<FrameLayout style="@style/more_seperator_line" />
+    <FrameLayout
+        style="@style/more_seperator_line"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:id="@+id/goto_device_voice_ctrl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/voice_ctrl_text"
+            style="@style/more_item_text"
+            android:layout_marginTop="10dp"
+            android:text="@string/stateconfig_device_voidce_ctrl"
+            android:textColor="@color/color_primary_black" />
+
+        <SeekBar
+            android:id="@+id/ctrl_light_seekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voice_ctrl_text"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:focusable="true"
+            android:maxHeight="4.0dip"
+            android:minHeight="4.0dip"
+            android:paddingLeft="30.0dip"
+            android:paddingRight="30.0dip"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/seekbar_thumb_normal" />
+    </LinearLayout>
+
+    <FrameLayout
+        style="@style/more_seperator_line"
+        android:layout_marginBottom="20dp" />
+<FrameLayout style="@style/more_seperator_line" />
+    <RelativeLayout
+        android:id="@+id/goto_device_light_switch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/more_item_text"
+            android:text="@string/stateconfig_device_light_switch"
+            android:textColor="@color/color_primary_black" />
+
+        <ImageView style="@style/more_item_switch" />
+    </RelativeLayout>
+
+    <FrameLayout style="@style/more_seperator_line" />
+
+    <RelativeLayout
+        android:id="@+id/goto_device_microphone_switch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/more_item_text"
+            android:text="@string/stateconfig_device_microphone_switch"
+            android:textColor="@color/color_primary_black" />
+
+        <ImageView style="@style/more_item_switch" />
+    </RelativeLayout>
+
+    <FrameLayout style="@style/more_seperator_line" />
+
+    <RelativeLayout
+        android:id="@+id/goto_device_wifi_reconfig"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/more_item_text"
+            android:text="@string/stateconfig_device_wifi_reconfig"
+            android:textColor="@color/color_primary_black" />
+
+        <ImageView style="@style/more_item_goto" />
+    </RelativeLayout>
+
+    <FrameLayout style="@style/more_seperator_line" />
+
+    <RelativeLayout
+        android:id="@+id/goto_device_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/more_item_text"
+            android:text="@string/stateconfig_device_upgrade"
+            android:textColor="@color/color_primary_black" />
+
+        <ImageView style="@style/more_item_goto" />
+    </RelativeLayout>
+
+    <FrameLayout style="@style/more_seperator_line" />
+
+    <RelativeLayout
+        android:id="@+id/goto_device_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/more_item_text"
+            android:text="@string/stateconfig_device_unbind"
+            android:textColor="@color/color_primary_black" />
+    </RelativeLayout>
+
+    <FrameLayout style="@style/more_seperator_line" />
+
+</LinearLayout>

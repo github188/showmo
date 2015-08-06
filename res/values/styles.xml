@@ -1,0 +1,311 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        toolbar（actionbar）颜色
+        <item name="colorPrimary">#4876FF</item>
+        状态栏颜色
+        <item name="colorPrimaryDark">#3A5FCD</item>
+        窗口的背景颜色
+        <item name="android:windowBackground">@android:color/white</item>
+        SearchView          <item name="searchViewStyle">@style/MySearchViewStyle</item>
+    </style>
+    -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/myActionBarStyle</item>
+    </style>
+
+    <style name="myActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/color_primary_dark</item>
+    </style>
+
+    <!-- text style bases -->
+    <style name="style_showmo_text_large" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/dimen_showmo_text_large</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="style_showmo_text_medium" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/dimen_showmo_text_medium</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="style_showmo_text_small" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/dimen_showmo_text_small</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="style_showmo_text_tiny" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/dimen_showmo_text_tiny</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <!-- busy indicator -->
+    <style name="style_busy_indicator_progressbar">
+        <item name="android:indeterminateDrawable">@drawable/busy_indicator_drawable</item>
+        <item name="android:minWidth">76dp</item>
+        <item name="android:maxWidth">76dp</item>
+        <item name="android:minHeight">76dp</item>
+        <item name="android:maxHeight">76dp</item>
+        <item name="android:indeterminateDuration">500</item>
+    </style>
+
+    <!-- progress bar -->
+    <style name="style_ProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progressbar_layer_drawable</item>
+    </style>
+
+    <!-- 主页面 -->
+    <style name="style_status_bar" parent="@style/style_showmo_text_small">
+        <item name="android:textColor">@color/color_font_orange</item>
+    </style>
+
+    <style name="style_device_name" parent="@style/style_showmo_text_small">
+        <item name="android:textColor">@color/color_font_device_name</item>
+    </style>
+
+    <style name="style_main_page_menu_btn">
+        <item name="android:layout_width">@dimen/dimen_mainpage_menu_btn_size</item>
+        <item name="android:layout_height">@dimen/dimen_mainpage_menu_btn_size</item>
+        <item name="android:background">@drawable/btn_main_menu_selector</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="style_main_page_video_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimen_mainpage_menu_btn_size</item>
+        <item name="android:background">@drawable/btn_main_video</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="style_main_page_menu_item" parent="@style/style_showmo_text_medium">
+        <item name="android:background">@drawable/btn_menu_item_selector</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_main_page_menu_item_sparate_line">
+        <item name="android:background">@color/color_mainpage_menu_item_underline</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="style_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">@color/color_font_orange</item>
+    </style>
+
+    <style name="style_radio_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/btn_menu_item_selector</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    <!-- add device set wifi -->
+    <!-- 编辑复合控件 -->
+    <style name="style_compound_edit_view_base" parent="@style/style_showmo_text_medium">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="style_add_device_set_wifi_op_text" parent="@android:style/TextAppearance">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/color_font_orange</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="style_add_device_set_wifi_btn">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/color_btn_selector</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="style_add_device_tip_text" parent="@style/style_showmo_text_medium">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+        <item name="android:textColor">@color/color_adddevice_tip</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="style_add_device_search">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/img_btn_selector</item>
+    </style>
+
+    <!-- 密码输入框 -->
+    <style name="style_passwordtext" parent="@style/style_showmo_text_medium">
+        <item name="android:background">@null</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:hint">@string/password</item>
+        <item name="android:textColorHint">#7a7a7a</item>
+        <item name="android:maxLength">18</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- 自定义dialog -->
+    <style name="style_custom_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/fillet_dialog</item>
+    </style>
+    <!-- loading dialog -->
+    <style name="style_load_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/fillet_dialog_loading</item>
+    </style>
+
+    <style name="PwDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+    <!-- widget_filter_window btn -->
+    <style name="btn_filter_condition_style" parent="@android:style/Widget.Button">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/custom_orange</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- widget_filter_window  tv show data -->
+    <style name="tv_filter_show_data_style">
+        <item name="android:background">@drawable/dialog_btn_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+    <!-- widget_filter_window  tv vertical divider -->
+    <style name="tv_filter_vertical_divider_style">
+        <item name="android:layout_width">0.7dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_gravity">center_vertical </item>
+        <item name="android:background">@color/color_btn_disable</item>
+    </style>
+
+    <style name="preference_user_set">
+        <item name="android:windowBackground">@color/color_pref_bg</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:colorBackgroundCacheHint">@color/color_pref_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- slide date time picker -->
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <!--
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+       
+    </style>
+
+    Application theme.
+    <style name="AppTheme" parent="AppBaseTheme">
+        All customizations that are NOT specific to a particular API-level can go here.
+    </style>
+    -->
+    <!-- slide date time picker end -->
+
+
+    <!-- more page -->
+    <style name="more_seperator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">@color/color_more_seperator</item>
+    </style>
+
+    <style name="more_seperator_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/color_tip_black</item>
+    </style>
+
+    <style name="more_item_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="more_item_goto">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/arrow_right</item>
+    </style>
+
+    <style name="more_item_switch">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/switch_on</item>
+    </style>
+
+    <!-- item_device_manage.xml -->
+    <style name="tv_dev_common_text" parent="@style/style_showmo_text_small">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="progress_download" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">10dip</item>  
+    	<item name="android:minHeight">3dip</item>  
+    	<item name="android:maxWidth">600dip</item>
+    	<item name="android:minWidth">250dip</item>
+        <item name="android:indeterminateOnly">false</item>  
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>  
+        <item name="android:progressDrawable">@drawable/progress_defined</item> 
+        
+    </style>
+
+</resources>

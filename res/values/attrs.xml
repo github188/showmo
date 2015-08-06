@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PwEditView">
+        <attr name="leftIconSrc" format="reference" />
+        <attr name="rightIconSrc" format="reference" />
+        <attr name="leftIconHsize" format="dimension" />
+        <attr name="leftIconWsize" format="dimension" />
+        <attr name="rightIconHsize" format="dimension" />
+        <attr name="rightIconWsize" format="dimension" />
+        <attr name="leftIconVisible" format="boolean" />
+        <attr name="rightIconVisible" format="boolean" />
+        <attr name="pswMode" format="boolean" />
+        <attr name="maxLength" format="integer" />
+        <attr name="hintText" format="string" />
+        <attr name="text" format="string" />
+        <attr name="regex" format="string" />
+        <attr name="underlineColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PwMovieImageView">
+        <attr name="auto_play" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="PwRoundVolumControlView">
+        <attr name="VolumForeColor" format="color"></attr>
+        <attr name="VolumBgColor" format="color"></attr>
+        <attr name="radius" format="dimension"></attr>
+        <attr name="VolumLevelCount" format="integer"></attr>
+        <attr name="splitSize" format="integer"></attr>
+        <attr name="backcolor" format="color"></attr>
+        <attr name="ringWidth" format="dimension"></attr>
+        <attr name="centerIcon" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="PwCtrlLightView">
+        <attr name="src" format="reference"></attr>
+        <attr name="src_wid" format="dimension"></attr>
+        <attr name="src_hei" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="PwTipButton">
+        <attr name="tip_src" format="reference"/>
+        <attr name="content_text" format="string"/>
+        <attr name="content_src" format="reference"/>
+    </declare-styleable>
+    
+    <declare-styleable name="PwSoundView">
+        <attr name="maxValue" format="integer"/>
+        <attr name="minValue" format="integer"/>
+        <attr name="itemColor" format="reference"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="@string/dialog_title"
+            android:textColor="@color/dialog_title_line"
+            style="@style/style_showmo_text_large" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dialog_title_line" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="的恢复健康萨哈夫快速减肥哈咖啡壶独守空房哈萨克粉红色地方"
+            android:textColor="@android:color/black"
+            style="@style/style_showmo_text_medium" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#5f5f5f" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_btn_selector"
+            style="@style/style_showmo_text_medium"
+            android:textColor="@color/color_primary_black"
+            android:text="@string/dialog_cancel" />
+
+        <FrameLayout
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#5f5f5f" >
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/dialog_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_btn_selector"
+            style="@style/style_showmo_text_small"
+            android:textColor="@color/color_primary_black"
+            android:text="@string/dialog_ok" />
+    </LinearLayout>
+
+</LinearLayout>

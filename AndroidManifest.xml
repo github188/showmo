@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.showmo"
+    android:versionCode="47"
+    android:versionName="2.0.1.17" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <!-- androidtestcase 配置 -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.showmo" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <application
+        android:name="com.showmo.base.ShowmoApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_launcher"
+         android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+
+        <!-- androidtestcase 配置 -->
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service
+            android:name="com.showmo.service.PwSendExceptionMailService"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.showmo.service.PwSendExceptionMailService.RUNACTOIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+         <activity
+            android:name="com.showmo.activity.deviceManage.DeviceOpenVedioVolumeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.deviceManage.DeviceSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activity.deviceManage.DeviceManageTabHostActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.addDevice.AddDeviceSetNetworkActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.more.ActivityAbout"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.showmo.activity.deviceManage.DeviceInfoActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.safe.ActivitySafeCenter"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.safe.ActivitySafeDisplay"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.safe.ActivitySafeSelect"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.safe.ActivitySafeDetails"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.more.ActivityAppUpdate"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.more.ActivityMore"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.more.ActivityProblemFeedback"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.addDevice.AddDeviceConfigFailuredActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.alarmInfo.InfoImgActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.addDevice.AddDeviceSearchActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.addDevice.AddDeviceUserEnsure"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.addDevice.AddDeviceConfigSearchActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.login.LoginActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait"
+           
+           >
+             <!-- android:windowSoftInputMode="adjustResize|stateHidden"   -->
+        </activity>
+        <activity android:name="com.showmo.ShowmoSplashActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+             android:screenOrientation="portrait">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.showmo.activity.deviceManage.MainDeviceManagerActivity"
+            android:theme="@style/AppTheme">
+            
+        </activity>
+        
+        <activity android:name="com.showmo.TestAcvitiy"
+            android:icon="@drawable/switch_on"
+            android:theme="@style/AppTheme">
+         
+        </activity>
+        <activity android:name="com.showmo.preference.userSet.UserSetPreferenceActivity" 
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.showmo.activity.register.SelectCountryActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.register.RegisterActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.register.AgreementActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.login.ResetPswActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.login.ResetPswHaveLoginActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.login.VerificationCodeActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.deviceManage.DeviceManageActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.deviceManage.AlarmSwitchActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.showmo.activity.alarmInfo.DeviceListActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="com.showmo.alarminfo.devicelist.activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.showmo.activity.alarmInfo.InfoListActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="com.showmo.alarminfo.activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.showmo.activity.more.ActivityAppQrDownload"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- for test  start -->
+        <activity
+            android:name="com.showmo.ljy.test.TsetFilterWindowActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+         
+        <activity
+            android:name="com.showmo.ljy.test.TestAlarmDaoActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.showmo.activity.purchase.PurchasePageActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- for test  end -->
+        <service android:name="com.showmo.timer.TimerService" >
+        </service>
+        <service android:name="com.showmo.service.PwNetWorkService" >
+        </service>
+        <service android:name="com.showmo.service.PwMsgCallbackDealService" >
+        </service>
+ 	<activity
+            android:name="com.showmo.activity.addDevice.AddDeviceWithoutTipActivity"
+            android:label="@string/title_activity_add_device_without_tip" >
+        </activity>
+    <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!-- 【必须】 exported设置为true -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent" >
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="" />
+            </intent-filter>
+        </activity>
+
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2" >
+            <intent-filter android:priority="0x7fffffff" >
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <!-- 【可选】 usb相关的系统广播，增强信鸽service的复活机会，请根据需要添加 -->
+            <intent-filter android:priority="0x7fffffff" >
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+
+        <!-- 【必须】 通知service，其中android:name部分要改为当前包名 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true" >
+            <intent-filter>
+
+                <!-- 【必须】 请修改为当前APP名包.PUSH_ACTION，如demo的包名为：com.qq.xgdemo -->
+                <action android:name="com.showmo.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <!-- 【可选】APP实现的Receiver，用于接收消息透传和操作结果的回调，请根据需要添加 -->
+        <!-- YOUR_PACKAGE_PATH.CustomPushReceiver需要改为自己的Receiver： -->
+        <receiver android:name="com.puwell.receiver.MessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 请修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100120234" />
+        <!-- 【必须】 请修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A3IU22C96QGG" />
+<activity android:name="com.showmo.activity.alarmInfo.FilterResultActivity"
+     android:theme="@android:style/Theme.Holo.Light.NoActionBar"> </activity>
+
+	 <activity
+ 			android:name="com.mob.tools.MobUIShell"
+ 			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+ 			android:configChanges="keyboardHidden|orientation|screenSize"
+ 			android:screenOrientation="portrait"
+ 			android:windowSoftInputMode="stateHidden|adjustResize" >
+ 			<intent-filter>
+ 			<data android:scheme="tencent100371282" />
+ 			<action android:name="android.intent.action.VIEW" />
+ 			<category android:name="android.intent.category.BROWSABLE" />
+			<category android:name="android.intent.category.DEFAULT" />
+ 			</intent-filter>
+ 	</activity>
+ 	<!--微信分享回调 --> 
+ 	<activity android:name=".wxapi.WXEntryActivity" 
+ 	    android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+ 	    android:configChanges="keyboardHidden|orientation|screenSize" 
+ 	    android:exported="true" 
+ 	    android:screenOrientation="portrait" /> 
+<service android:name="com.showmo.network.DownloadService"/>
+    </application>
+    <!-- 【必须】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 微信SDK所需权限 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+</manifest>

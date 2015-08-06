@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/playback_ctrl_stop"
+        style="@style/style_main_page_video_btn"
+        android:src="@drawable/stop_play" />
+
+    <ImageButton
+        android:id="@+id/playback_ctrl_expand"
+        style="@style/style_main_page_video_btn"
+        android:layout_weight="8"
+        android:src="@drawable/menu_arrow_down" />
+
+    <ImageButton
+        android:id="@+id/playback_ctrl_capture"
+        style="@style/style_main_page_video_btn"
+        android:src="@drawable/capture"
+        android:layout_weight="1" />
+
+</LinearLayout>

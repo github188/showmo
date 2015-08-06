@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+      <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <Button
+                android:id="@+id/btn_login_fast_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="35dp"
+                android:text="@string/fast_experience"
+                android:textColor="#e46811"
+                android:textSize="@dimen/dimen_showmo_text_medium" />
+
+            <LinearLayout
+                android:id="@+id/lin_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_login_fast_experience"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp" >
+
+                <!-- 输入账号 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/login_img_user" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/et_login_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:completionThreshold="1"
+                        android:digits="@string/filter_for_account_and_psw"
+                        android:dropDownVerticalOffset="5dp"
+                        android:hint="@string/account"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"
+                        android:textSize="@dimen/dimen_showmo_text_medium"
+                        android:textColorHint="#7a7a7a" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#c0c0c0" >
+                </LinearLayout>
+
+                <!-- 输入密码 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:background="@drawable/login_img_psw" />
+
+                    <com.showmo.widget.PasswordText
+                        android:id="@+id/et_login_password"
+                        style="@style/style_passwordtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textSize="@dimen/dimen_showmo_text_medium"
+                        android:digits="@string/filter_for_account_and_psw" />
+
+                    <CheckBox
+                        android:id="@+id/cb_see_psw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:background="@drawable/btn_see_psw_selector"
+                        android:button="@null" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#c0c0c0" >
+                </LinearLayout>
+
+                <!-- 忘记密码与注册 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="30dp" >
+
+                    <Button
+                        android:id="@+id/btn_login_forget_psw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/login_btn_forgot_psw"
+                        android:drawablePadding="2dp"
+                        android:text="@string/forget_psw"
+                        android:textSize="@dimen/dimen_showmo_text_medium" />
+
+                    <Button
+                        android:id="@+id/btn_login_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/login_btn_register"
+                        android:drawablePadding="2dp"
+                        android:text="@string/register"
+                        android:textSize="@dimen/dimen_showmo_text_medium" />
+                </RelativeLayout>
+
+                <!-- 登录按钮 -->
+
+                <Button
+                    android:id="@+id/btn_login_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btn_login_selector"
+                    android:text="@string/login"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/dimen_showmo_text_medium" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/login_img_city_background"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_img_city_background" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:clickable="false"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/power_logo"
+            android:padding="10dp"
+            android:text="@string/powerd_by"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

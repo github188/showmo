@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_span_time_text">#ffffb383</color>
+    <color name="color_timeline_bg">#ff000000</color>
+    <color name="color_cur_time_text">#ffffffff</color>
+    <color name="color_video_frame">#ff4f82b2</color>
+    <color name="color_axis">#ffffffff</color>
+
+    <dimen name="dimen_span_time_text">8sp</dimen>
+    <dimen name="dimen_cur_time_text">14sp</dimen>
+    <dimen name="dimen_axis_hor_wid">2dp</dimen>
+    <dimen name="dimen_axis_ver_wid">1dp</dimen>
+    <dimen name="dimen_axis_hor_up_y_to_bottom">40dp</dimen>
+    <dimen name="dimen_axis_hei">30dp</dimen>
+    <dimen name="dimen_left_refx">30dp</dimen>
+    <dimen name="dimen_right_refx">30dp</dimen>
+    <dimen name="dimen_cursor_w">40dp</dimen>
+    <dimen name="dimen_cursor_h">54dp</dimen>
+	
+</resources>

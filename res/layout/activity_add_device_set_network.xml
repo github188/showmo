@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pwattr="http://schemas.android.com/apk/res/com.showmo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/set_wifi_titlebar"
+        layout="@layout/titlebar_common" />
+
+    <TextView
+        android:id="@+id/set_wifi_tip"
+        style="@style/style_add_device_tip_text"
+        android:layout_below="@id/set_wifi_titlebar"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_device_op_ssid" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_wifi_tip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_wifi_titlebar"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp" >
+
+            <TextView
+                android:id="@+id/add_device_wifi_name"
+                style="@style/style_compound_edit_view_base"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#0c0c0c" />
+
+            <!--
+                 <TextView
+                style="@style/style_add_device_set_wifi_op_text"
+                android:singleLine="true"
+                android:text="@string/add_device_op_ssidpsw" />
+            -->
+
+            <com.showmo.widget.PWEditCompoundView
+                android:id="@+id/add_device_wifi_psw"
+                style="@style/style_compound_edit_view_base"
+                pwattr:hintText="@string/add_device_wifi_psw_hint"
+                pwattr:leftIconVisible="false"
+                pwattr:pswMode="true"
+                pwattr:rightIconSrc="@drawable/login_psw_invisible"
+                pwattr:underlineColor="#0c0c0c" />
+            
+            <Button
+                android:id="@+id/btn_set_net_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_login_selector"
+                android:text="@string/next_step"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_showmo_text_medium" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

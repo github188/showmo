@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.showmo.activity.deviceManage.DeviceInfoActivity" >
+
+   <include
+        android:id="@+id/lay_dev_bar"
+        layout="@layout/titlebar_common" />
+   <RelativeLayout 
+	     android:id="@+id/rel_dev_update_reminder"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	    android:visibility="gone"
+	       android:layout_marginBottom="10dp">
+	    <TextView 
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textSize="18sp"
+	       	android:paddingLeft="20dp"
+	       	android:text="@string/dev_model" />
+	   <TextView 
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	      android:text="@string/app_name" />
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	       android:layout_marginBottom="10dp">
+	    <TextView 
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textSize="18sp"
+	       	android:paddingLeft="20dp"
+	       	android:text="@string/dev_connection_wifi" />
+	   <TextView 
+	       android:id="@+id/tv_connection_wifi"
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	      android:text="@string/wifi" />
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	    android:visibility="gone"
+	       android:layout_marginBottom="10dp">
+	    <TextView 
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textSize="18sp"
+	       	android:paddingLeft="20dp"       	
+	       	android:text="@string/dev_wifi_signal" />
+	   <TextView 
+	        android:id="@+id/tv_wifi_signal"
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	      android:text="0%" />
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	       android:layout_marginBottom="10dp">
+	    <TextView 
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textSize="18sp"
+	       	android:paddingLeft="20dp"	       	
+	       	android:text="@string/system_version" />
+	   <TextView 
+	       android:id="@+id/device_cur_version"
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	      android:text="@string/system_version" />
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	       android:layout_marginBottom="10dp">
+	    <TextView 
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textSize="18sp"
+	       	android:paddingLeft="20dp"	       	
+	       	android:text="@string/ip_address" />
+	   <TextView 
+	       android:id="@+id/device_cur_ip"
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	      android:text="@string/ip_address" />
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	       android:layout_marginBottom="10dp">
+	    <TextView 
+	        android:textColor="@color/color_pref_item_title" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textSize="18sp"
+	       	android:paddingLeft="20dp"	       	
+	       	android:text="@string/mac_address" />
+	   <TextView 
+	       android:id="@+id/device_cur_mac"
+	        android:layout_centerVertical="true"
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	      android:text="@string/mac_address" />
+	</RelativeLayout>
+	<FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+	
+
+</LinearLayout>

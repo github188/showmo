@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+	 >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_video_record"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_main_video"
+            android:layout_centerInParent="true"
+            android:src="@drawable/record" />
+        <TextView 
+            android:id="@+id/record_state_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_showmo_text_tiny"
+            android:text="@string/record"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btn_video_record"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        >
+
+        <ImageButton
+            android:id="@+id/btn_intercom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/intercom_selector"
+            android:layout_centerInParent="true"
+            android:src="@drawable/intercom" />
+        <TextView 
+            android:id="@+id/intercom_state_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_showmo_text_tiny"
+            android:text="@string/intercom_click_to"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/btn_intercom"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_video_capture"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_main_video"
+            android:layout_centerInParent="true"
+            android:src="@drawable/capture" />
+        <TextView 
+            android:id="@+id/capture_state_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_showmo_text_tiny"
+            android:text="@string/capture"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btn_video_capture"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item android:id="@+id/nv_item1"
+	    android:icon="@drawable/showmo_logo"
+	    android:title="itetm1"/>
+	<item android:id="@+id/nv_item2"
+	    android:icon="@drawable/showmo_logo"
+	    android:title="itetm1"/>
+	<item android:id="@+id/nv_item3"
+	    android:icon="@drawable/showmo_logo"
+	    android:title="itetm1"/>
+	<item android:id="@+id/nv_item4"
+	    android:icon="@drawable/showmo_logo"
+	    android:title="itetm1"/>
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_bar_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/color_menubar_bg"
+    xmlns:app="http://schemas.android.com/apk/res/com.showmo"
+    android:gravity="center_vertical" >
+
+    <ImageButton
+        android:id="@+id/menu_user"
+        style="@style/style_main_page_menu_btn"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/user" />
+
+    <com.showmo.widget.PwTipImgButton
+        android:id="@+id/menu_manage"
+        style="@style/style_main_page_menu_btn"
+        android:layout_toLeftOf="@id/menu_user"
+        app:content_src="@drawable/manage" 
+        app:tip_src="@drawable/red_point"/>
+
+    <com.showmo.widget.PwTipImgButton
+        android:id="@+id/menu_alarm"
+        style="@style/style_main_page_menu_btn"
+        android:layout_toLeftOf="@id/menu_manage"
+        app:content_src="@drawable/warn_msg"
+        app:tip_src="@drawable/red_point" />
+    
+     <ImageButton
+        android:id="@+id/menu_purchase"
+        style="@style/style_main_page_menu_btn"
+        android:layout_toLeftOf="@id/menu_alarm"
+        android:src="@drawable/download" 
+        android:visibility="gone"/>
+     
+       <ImageButton
+        android:id="@+id/share"
+        style="@style/style_main_page_menu_btn"
+        android:layout_toLeftOf="@id/menu_alarm"
+        android:src="@drawable/ic_menu_share" 
+        />
+
+</RelativeLayout>

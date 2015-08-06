@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_primary">#ff5722</color>
+    <color name="color_primary_dark">#e64a19</color>
+    <color name="color_accent_light">#ffccbc</color>
+    <color name="color_primary_black">#dd000000</color>
+    <color name="color_secondary_black">#7a000000</color>
+    <color name="color_tip_black">#3d000000</color>
+    <color name="color_primary_white">#ddffffff</color>
+    <color name="color_secondary_white">#7affffff</color>
+    <color name="color_tip_white">#3dffffff</color>
+    
+    <!-- main activity -->
+    <color name="color_menubar_bg">#efed6715</color>
+    <color name="color_video_menubar_underline">#2e2e2e</color>
+    <color name="color_status_bg">#000000</color>
+    <color name="color_btn_bg">#ff7621</color>
+    <color name="color_font_orange">#ffb383</color>
+    <color name="color_font_grey">#2f2f2f</color>
+    <color name="color_font_black">#000000</color>
+    <color name="color_font_device_name">#93918f</color>
+    <color name="color_bg_device_name">#1c110a</color>
+    <color name="color_bg_device_select">#4eb9d3</color>
+    <color name="color_bg_device_press">#000000</color>
+    <color name="color_mainpage_menu_btn">#00000000</color>
+    <color name="color_mainpage_menu_btn_press">#25000000</color>
+    <color name="color_mainpage_video_btn">#00000000</color>
+    <color name="color_mainpage_video_btn_press">#25ffffff</color>
+    <color name="color_mainpage_menu_item_underline">#25000000</color>
+    <color name="color_adddevice_tip">#5f5f5f</color>
+    <color name="color_deep_orange">#ff7621</color>
+    <color name="color_light_orange">#ee7942</color>
+    <!-- color btn -->
+    <color name="color_btn_press">#4297ff</color>
+    <color name="color_btn_normal">#ff7621</color>
+
+    <!-- 按键不可用的颜色 -->
+    <color name="color_btn_disable">#858585</color>
+    <!-- 完全透明 -->
+    <color name="color_completely_transparent">#00000000</color>
+
+    <!-- dialog -->
+    <color name="dialog_title_line">#e85a05</color>
+    <!-- listview 分割线通用颜色 -->
+    <color name="lv_divider_color">#c0c0c0</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+	
+    <!-- preference颜色设置 -->
+    <color name="color_pref_screen_background">#e46811</color>
+    <color name="color_pref_screen_title">#ffffff</color>
+    <color name="color_pref_screen_title_text_color">#ffffff</color>
+    <color name="color_pref_category">#ffffff</color>
+    <color name="color_pref_category_title">#000000</color>
+    <color name="color_pref_category_summary">#121212</color>
+    <color name="color_pref_category_border">#555555</color>
+    <color name="color_pref_item">#ffffff</color>
+    <color name="color_pref_item_title">#000000</color>
+    <color name="color_pref_item_summary">#1f1f1f</color>
+    <color name="color_pref_item_border">#5f555555</color>
+    <color name="color_pref_bg">#ffffff</color>
+
+    <!-- more page -->
+    <color name="color_more_seperator">#5f666666</color>
+    <color name="color_more_seperator_line">#666666</color>
+    <color name="custom_orange">#e85a05</color>
+    <color name="gray_holo_dark">#ff464646</color>
+    <color name="gray_holo_light">#ffd0d0d0</color>
+	
+    <color name="color_add_device_tip">#1a1a1a</color>
+    <color name="color_red">#FF0000</color>
+    <color name="sky_blue">#87cefa</color>
+</resources>

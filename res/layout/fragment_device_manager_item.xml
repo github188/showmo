@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="#ffffff"
+    android:layout_marginBottom="8dp"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/device_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/dev_init" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/color_tip_black" >
+
+            <TextView
+                style="@style/style_showmo_text_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="相机名：我的摄像头"
+                android:textColor="@color/color_primary_white" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/style_showmo_text_tiny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@color/color_primary"
+            android:padding="4dp"
+            android:text="在线"
+            android:textColor="@color/color_primary_white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+               android:layout_margin="4dp"
+                android:src="@drawable/warn_msg" 
+                android:background="@color/color_accent_light"/>
+
+            <ImageButton
+                android:layout_width="1px"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_delete" 
+                android:background="@color/color_accent_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/camera_grant" 
+                android:background="@color/color_accent_light" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/warn_msg" 
+                android:background="@color/color_accent_light" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

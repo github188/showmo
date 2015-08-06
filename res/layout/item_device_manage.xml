@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DeviceManageAdpater -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/lin_dev_container"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" 
+       >
+
+        <ImageView
+            android:id="@+id/img_dev_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dev_init" />
+
+        <LinearLayout
+             android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/img_dev_pic"
+            android:id="@+id/lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+             >
+
+            <!-- 第一行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_dev_name"
+                    style="@style/tv_dev_common_text"
+                    android:layout_weight="1"
+                    android:text="@string/test_device_name"
+                    android:textSize="@dimen/dimen_showmo_text_medium" />
+
+                <TextView
+                    android:id="@+id/tv_dev_uuid"
+                    style="@style/tv_dev_common_text"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/test_uuid"
+                    android:textColor="#666666"
+                     />
+            </LinearLayout>
+
+            <!-- 第二行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <!-- 告警开关提示 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/tv_dev_common_text"
+                        android:text="@string/alarmswitch_colon" />
+
+                    <TextView
+                        android:id="@+id/tv_dev_alarmswitch"
+                        style="@style/tv_dev_common_text"
+                        android:text="@string/unavailable" />
+                </LinearLayout>
+
+                <!-- 固件升级提示 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <!--
+                    <TextView
+                        style="@style/tv_dev_common_text"
+                        android:text="@string/firmware_update_colon" 
+                        android:visibility="gone"/>
+                    -->
+
+                    <TextView
+                        android:id="@+id/tv_dev_firmware_update"
+                        style="@style/tv_dev_common_text"
+                        android:text="@string/temporarily_not_have_upgrade" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

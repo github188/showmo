@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/small_window_layout"
+	android:layout_width="300dp"
+	android:layout_height="wrap_content"
+	android:background="#8fffffff"
+    >
+    <TextView 
+        android:id="@+id/percent"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/net_use_alarm"
+        android:textColor="#000000"
+        style="@style/style_showmo_text_tiny"
+        />
+</LinearLayout>

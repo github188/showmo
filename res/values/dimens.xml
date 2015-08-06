@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- main activity -->
+    <dimen name="dimen_showmo_text_large">18sp</dimen>
+    <dimen name="dimen_showmo_text_medium">16sp</dimen>
+    <dimen name="dimen_showmo_text_small">14sp</dimen>
+   <dimen name="dimen_showmo_text_tiny">12sp</dimen>
+    <dimen name="dimen_status_text_size">17sp</dimen>
+    <dimen name="dimen_device_item_width">100dp</dimen>
+    <dimen name="dimen_device_item_height">100dp</dimen>
+    <dimen name="dimen_mainpage_menu_btn_size">40dp</dimen>
+    <!-- listview 分割线通用高度 -->
+    <dimen name="lv_divider_height">0.7dp</dimen>
+    <!-- listview item 两边留白 -->
+    <dimen name="lv_padding_left_right">10dp</dimen>
+    <dimen name="time_picker_interval">2dp</dimen>
+    <dimen name="dimen_add_device_tip">17sp</dimen>
+    <dimen name="dimen_device_list_layout_h">100dp</dimen>
+    <dimen name="dimen_device_menu_layout_h">50dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/titlebar_common" />
+
+    <ImageView
+        android:id="@+id/add_device_reset_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:src="@drawable/reset_logo" />
+
+   <!--  <TextView
+        android:id="@+id/add_device_ensure_reset_tip"
+        style="@style/style_showmo_text_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="@string/add_device_ensure_reset_tip"
+        android:textSize="15sp"
+        android:textStyle="italic" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" >
+
+        <FrameLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/expand_page_cur_item" >
+        </FrameLayout>
+
+        <TextView
+            style="@style/style_showmo_text_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="5dp"
+            android:text="@string/add_device_ensure_reset_tip"
+            android:textColor="@color/color_add_device_tip" />
+    </LinearLayout>
+
+</LinearLayout>

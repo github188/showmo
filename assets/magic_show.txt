@@ -1,0 +1,66 @@
+<type>
+	gl_pattern;
+</type>
+
+<lib>
+	libName =	"pw_magic_show";
+	Create	=	"pw_ms_Create";
+	Destory	=	"pw_ms_Destory";
+	Reset	=	"pw_ms_Reset";
+	SetInfo	=	"pw_ms_SetInfo";
+	GetInfo	=	"pw_ms_GetInfo";
+	Play	=	"pw_ms_Play";
+	Pause	=	"pw_ms_Pause";
+	Replay	=	"pw_ms_Replay";
+	Stop	=	"pw_ms_Stop";
+	RunTime	=	"pw_ms_RunTime";
+	Finger	=	"pw_ms_FingerDown";
+</lib>
+
+<init>
+	Create;
+</init>
+
+<ready>
+	CheckPanoInfo: "single";
+	GetDataSource: "single",	"pano_type", &temp0;
+	SetInfo: "pano_type",		temp0;
+	
+	GetDataSource: "single",	"pano_tilt", &temp0;
+	SetInfo: "pano_tilt",		temp0;
+	
+	GetDataSource: "single",	"pano_centerx", &temp0;
+	SetInfo: "pano_centerx",	temp0;
+	
+	GetDataSource: "single",	"pano_centery", &temp0;
+	SetInfo: "pano_centery",	temp0;
+	
+	GetDataSource: "single",	"pano_radius", &temp0;
+	SetInfo: "pano_radius",		temp0;
+
+ 	SetInfo: "add_project",		"default_project";
+
+	GetInfo: "lock_project",	&temp0;
+	GetInfo: "lock_group",		&temp1;
+	GetInfo: "lock_member",		&temp2;
+	
+	SetInfo: "lock_project",	"default_project";
+	SetInfo: "lock_group",		"all";
+	SetInfo: "lock_member",		"all";
+
+	SetInfo: "set_texture_name",	"single";
+
+	SetInfo: "lock_project",	temp0;
+	SetInfo: "lock_group",		temp1;
+	SetInfo: "lock_member",		temp2;
+	
+	SetInfo: "launch_project",	"default_project";
+	Play;
+	
+</ready>
+
+
+<uninit>
+	Stop;
+	Destory;
+</uninit>

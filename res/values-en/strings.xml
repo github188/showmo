@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">小末</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- mainpage -->
+    <string name="app_need_work_with_net">您的手机当前没有可用网络，小末需要在联网状态下工作哦！</string>
+    <string name="add_device">添加</string>
+    <string name="menu_modify_psw">修改密码</string>
+    <string name="menu_switch_user">切换用户</string>
+    <string name="menu_exit">退出</string>
+    <string name="menu_device_manager">设备管理</string>
+    <string name="menu_safe_center">安全中心</string>
+    <string name="menu_set">设置</string>
+    <string name="menu_more">更多</string>
+    <string name="menu_quality">高清模式</string>
+    <string name="menu_fluency">标准模式</string>
+    <string name="menu_adapter">自适应</string>
+    <string name="exit_warn">再按一次退出</string>
+    <string name="get_device_list_failured">获取摄像头列表失败</string>
+    <string name="stop_play_err">停止当前播放的摄像头失败</string>
+    <string name="stop_play_over">停止播放成功</string>
+    <string name="dev_delete">删除</string>
+    <string name="dev_rename">重命名</string>
+    <string name="play_disconnect">正在重连</string>
+    <!-- login 相关 -->
+    <string name="fast_experience">演示摄像头</string>
+    <string name="phone_number">手机号码</string>
+    <string name="password">密码（6-18位）</string>
+    <string name="forget_psw">忘记密码</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="powerd_by">Powered by</string>
+    <string name="login_successfully">登录成功</string>
+    <string name="logout_successfully">登出成功</string>
+    <string name="user_psw_error">用户密码错误</string>
+    <string name="account">账号</string>
+    <string name="login_repeat">重复登录</string>
+     <string name="others_login">该账户已经在其他设备上登录</string>
+    <string name="login_failuer">登录失败，请重试</string>
+    <string name="play_back_disconnect">由于网络原因，回放已停止！</string>
+	<string name="device_not_online">摄像头不在线！</string>
+    <!-- register  相关 -->
+    <string name="select_country">选择国家</string>
+    <string name="input_your_area">请输入您的所在区域：</string>
+    <string name="next_step">下一步</string>
+    <string name="setup_account_psw">请设置账号和密码</string>
+     <string name="setup_psw">请设置密码</string>
+    <string name="input_psw">请输入密码（6-18位）</string>
+    <string name="input_your_phone_as_account">输入手机号</string>
+     <string name="input_your_account">输入您的账号</string>
+    <string name="input_your_email_as_account">输入邮箱作为账号</string>
+    <string name="input_psw_again">请重复输入密码</string>
+    <string name="psw_inconsistent">重复输入密码不一致</string>
+    <string name="account_have_existed">用户名已经存在</string>
+    <string name="account_have_not_existed">用户不存在</string>
+    <string name="i_agree">我同意</string>
+    <string name="software_use_agreement">软件使用协议</string>
+    <string name="account_format_error">账号格式错误</string>
+    <string name="phone_format_error">手机号码格式错误</string>
+    <string name="email_format_error">邮箱格式错误</string>
+    <string name="psw_format_error">密码由(6-18)位字符或者数字组成</string>
+    <string name="register_success">注册成功</string>
+      <string name="register_fail">注册失败</string>
+    <string name="please_agree_account_format_error">请同意软件使用协议</string>
+    <string name="connect_server_success">已连接服务器</string>
+    <string name="connect_server_fai">连接服务器失败</string>
+    <string name="mgr_reconnect">服务器未连接，正在尝试重连！</string>
+    <string name="get_dev_ip_success">正在尝试连接摄像头</string>
+    <string name="get_dev_ip_fai">连接摄像头失败</string>
+    <string name="realplay_success">实时播放成功</string>
+    <string name="realplay_fai">实时播放失败</string>
+    <string name="play_back_success">回放中！</string>
+    <string name="play_back_fai">回放失败</string>
+    <!-- 忘记密码 相关 -->
+     <string name="find_psw">找回密码</string>
+    <string name="reset_psw">重置密码</string>
+    <string name="input_your_account_new_psw">请输入您的账号和新密码：</string>
+    <string name="input_your_account_old_and_new_psw">请输入您的账号和新旧密码：</string>
+    <string name="input_account">输入账号</string>
+    <string name="input_old_psw">输入旧密码</string>
+    <string name="input_new_psw">输入新密码</string>
+    <string name="input_new_psw_again">重复输入新密码</string>
+    <string name="modify">修改</string>
+	<string name="modify_psw_success">修改密码成功</string>
+    <!-- 填写验证码 相关 -->
+    <string name="input_verification_code">填写验证码</string>
+    <string name="we_have_send_email">我们已经向您填写的邮箱发送了一封验证邮件以激活你的账号，请输入收到的验证码。</string>
+    <string name="we_have_send_sms">我们已经向您填写的手机发送了一条验证短信以激活你的账号，请输入收到的验证码。</string>
+    <string name="recover">获取验证码</string>
+    <string name="can_recover_after_seconds">秒后可重新获得</string>
+    <string name="confirm">确认</string>
+    <string name="reset_psw_successful">密码重置成功</string>
+      <string name="reset_psw_fail">密码重置失败</string>
+    <string name="please_input_six_digits_verification_code">请输入6位验证码</string>
+    <string name="verification_code_error">验证码错误</string>
+     <string name="verification_code_fail">检测验证码失败</string>
+
+    <!-- 重置密码 相关 -->
+    <string name="user_not_exist">用户不存在</string>
+    <string name="reset_psw_success">密码重置成功</string>
+
+    <!-- 添加设备 -->
+    <string name="add_device_wifi_psw_hint">请输入无线密码</string>
+    <string name="add_device_previous">上一步</string>
+    <string name="add_device_advance">高级</string>
+    <string name="add_device_next">下一步</string>
+    <string name="add_device_sure">确认</string>
+    <string name="add_device_dhcp">DHCP</string>
+    <string name="add_device_dhcp_ip">输入给摄像头分配的IP</string>
+    <string name="add_device_dhcp_mac">输入子网掩码</string>
+    <string name="add_device_dhcp_gateway">输入网关</string>
+    <string name="add_device_title_set_wifi">配置网络</string>
+    <string name="add_device_op_ssid">摄像头需要连接到无线网络(目前暂时不支持5G WLAN,企业级路由器)</string>
+    <string name="add_device_op_ssidpsw">无线密码</string>
+    <string name="add_device_op_dhcpip">ip地址</string>
+    <string name="add_device_op_dhcpmac">子网掩码</string>
+    <string name="add_device_op_dhcpgateway">网关</string>
+    <string name="add_device_op_ipset">ip设置</string>
+    <string name="add_device_open_advance_option">打开高级选项</string>
+
+    <string-array name="add_device_op_ipset_arr">
+        <item>DHCP</item>
+        <item>静态</item>
+    </string-array>
+
+    <string name="add_device_search_activity">搜索摄像头</string>
+    <string name="add_device_seach_begin_search">开始搜索</string>
+    <string name="add_device_search_ssid_list">摄像头列表</string>
+    <string name="cancel">取消</string>
+    <string name="add_device_search_tip_text">正在扫描，剩余时间</string>
+    <string name="add_device_search_dialog_title">摄像头列表</string>
+    <string name="add_device_research">重新搜索</string>
+    <string name="add_device_name_device_dialog_title">为您的摄像头取个名字</string>
+    <string name="add_device_ensure_tip">请确认摄像头指示灯处于红灯闪烁状态，如果你听到了“等待接收无线网络名称和密码”的提示，请执行下一步&quot;</string>
+    <string name="add_device_ensure_can_not_get_tip">红灯没有闪烁怎么办</string>
+     <string name="add_device_ensure_tip1">请确认摄像头指示灯处于红灯闪烁状态，点击按钮进入下一步</string>
+    <string name="add_device_ensure_tip2">如果听到“等待接收无线网络名称和密码”的提示，请执行下一步&quot;</string>
+    <string name="add_device_ensure_next">红灯已闪烁</string>
+    <string name="add_device_ensure_without_tip_title">重置摄像头</string>
+    <string name="add_device_ensure_reset_tip">找到摄像头上的Reset圆孔，并用针插入该孔，实现重置功能</string>
+    <string name="add_device_ensure_title">摄像头添加</string>
+    <string name="add_device_wifi_unable">wifi开关已被关闭，请开启</string>
+    <string name="add_device_wifi_not_connect">当前没有可用的wifi网络，请连接wifi后重试</string>
+    <string name="add_device_config_tip">正在配置摄像头,请稍候...</string>
+    <string name="add_device_config_cancel">取消本次配置</string>
+    <string name="add_device_config_back">正在配置摄像头，请在听到摄像头提示错误后进行此次操作，是否继续？</string>
+    <string name="add_device_config_psw_operate_tip1">如果听到摄像头的“叮咚”声，说明摄像头已经收到指定的无线网络信息，开始尝试连接到互联网；</string>
+    <string name="add_device_config_psw_operate_tip2">如果摄像头提示“无线密码错误”，请返回到上一步，检查密码后，重新尝试；</string>
+    <string name="add_device_config_psw_operate_tip3">如果听到摄像头提示“已接入互联网”，请耐心等待片刻，并给您的摄像头命名，软件会自动跳转到视频浏览。</string>
+    <string name="add_device_config_title">配置摄像头</string>
+    <string name="add_device_wifi_changed">您当前的wifi网络已经改变，请重新填写配置信息</string>
+    <string name="add_device_wifi_changed_config_err">您当前的wifi网络已经改变，导致配置失败，请连接wifi网络后重新配置</string>
+    <string name="add_device_config_failured">配置摄像头失败</string>
+    <string name="add_device_wifi_info_exception">wifi信息出现错误，请重新配置</string>
+    <string name="add_device_config_err_connect_err">摄像头绿灯还未闪烁</string>
+    <string name="add_device_config_err_connect_suc">摄像头播报已经连上互联网</string>
+    <string name="add_device_config_device_counter">已完成添加：</string>
+    <string name="add_device_complete">完成</string>
+    <string name="add_device_bound_by_other">设备：%1$s 已经被用户:%2$s 所添加！如果您想添加此设备请先通知该用户解绑，继续添加请点“继续”，否则点击“退出”</string>
+    <string name="add_device_continue">继续</string>
+    <string name="add_device_quit">退出</string>
+    <string name="add_device_name_not_null">名字不能为空！</string>
+    <!-- 网络通讯 相关 -->
+    <string name="communication_failed">网络连接失败</string>
+    <string name="communication_timeout">网络连接超时</string>
+    <string name="mgr_not_connect">没有连上服务器</string>
+    <string name="dev_not_connect">没有连上摄像头</string>
+
+    <!-- 摄像头管理 相关 -->
+    <string name="device_manage">设备管理</string>
+     <string name="device_setting">设备设置</string>
+    <string name="delete">删除</string>
+    <string name="led_dimming">led调光</string>
+    <string name="alarmswitch">告警开关</string>
+    <string name="firmware_update">固件升级</string>
+    
+     <string name="update">升级</string>
+    <string name="alarmswitch_colon">告警开关：</string>
+    <string name="firmware_update_colon">固件升级：</string>
+    <string name="firmware_can_upgrade">固件可升级</string>
+    <string name="temporarily_not_have_upgrade">固件暂无更新</string>
+    <string name="is_upgrading">固件正在升级</string>
+    <string name="upgrading_pos">正在升级：%1$d %%</string>
+    <string name="upgrade_success">摄像头:%1$s 已经升级成功，现在可以查看了！</string>
+    <string name="upgrade_failure">摄像头:%1$s 由于网络原因，升级失败！请重试</string>
+    <string name="get_apply_test_account_failure">由于网络原因，获取演示摄像头失败！请重试</string>
+    <string name="unavailable">不可用</string>
+    <string name="available">可用</string>
+    <string name="switch_on">已开启</string>
+    <string name="switch_off">已关闭</string>
+    <string name="alarmswitch_colon_switch_off">告警开关已关闭</string>
+    <string name="hint">提示</string>
+    <string name="present_camera_will_be_unbind">当前摄像头将会被解除绑定吗，摄像头复位之后可以再次添加，是否继续？</string>
+    <string name="unbind_success">已成功解绑</string>
+    <string name="alarm_type">告警类型</string>
+    <string name="motion_detection">移动侦测</string>
+    <string name="comfirm_open">确定打开</string>
+    <string name="comfirm_close">确定关闭</string>
+    <string name="dev_installation_way">安装方式</string>
+    <string name="top_loading">顶装</string>
+    <string name="wall">壁装</string>
+    <string name="delete_dev">删除设备</string>
+    <string name="dve_name">设备名称</string>
+    <string name="light_switch">LED开关</string>
+    <string name="light_switch_state_set_err">设置LED开关失败,请重试</string>
+     <string name="volume_switch_state_set_err">获取视频播报开关失败!</string>
+      <string name="volume_switch_state_off">视频播放的声音已关闭</string>
+    <string name="light_switch_state_get_err">获取LED开关状态失败,请重试!</string>
+    <string name="finish_uppdate_firmware">固件升级完成</string>
+    <string name="current_firmware_version">当前固件版本</string>
+    <string name="current_firmware_new_version">已更新到最新版本</string>
+    <string name="switch_state">获取告警开关失败，请重试！</string>
+     <string name="volume_state">获取摄像头对讲声音失败，请重试！</string>
+    <string name="goto_upgrade">去升级</string>
+    <string name="continue_play">继续播放</string>
+    <string name="get_light_switch_err">获取LED开关状态失败</string>
+    <!-- 测试 -->
+    <string name="test_device_name">演示1：前台（壁装）</string>
+    <string name="test_uuid">DC00C1000VD2</string>
+    <string name="test_unread_message">条未读报警信息</string>
+    <string name="test_time">下午13:22</string>
+    <string name="test_date">2015年4月20日15：31</string>
+    <string name="test_recordid">11525635</string>
+    <!-- titlebar 相关 -->
+    <string name="back">返回</string>
+
+    <!-- dialog -->
+    <string name="loading">正在加载</string>
+    <string name="dialog_title">提示</string>
+    <string name="dialog_ok">确认</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="operate_err">操作失败</string>
+
+    <!-- 告警信息 -->
+    <string name="alarm_info">告警信息</string>
+    <string name="date">日期</string>
+    <string name="time">时间</string>
+    <string name="date_blank">日\t\t\t\t\t期</string>
+    <string name="time_blank">时间</string>
+    <string name="begin_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="type">类型</string>
+    <string name="type_blank">类\t\t\t\t\t型</string>
+    <string name="type_part_first">类</string>
+    <string name="type_part_sencond">型</string>
+    <string name="to">至</string>
+    <string name="have_new_alarm">有新的告警信息</string>
+    <string name="no_new_alarm">暂无新的告警信息</string>
+    <string name="new_alarm">新的告警信息</string>
+    <string name="download_img">下载图片</string>
+    <string name="look_img">查看图片</string>
+    <string name="downloading">正在下载</string>
+    <string name="alarm_info_pic">告警信息图片</string>
+    <string name="download_video">下载视频</string>
+    <string name="filter">筛选</string>
+    <string name="no_more_alarm">没有更多的告警信息了</string>
+    <string name="begintime_bigger_than_endtime">开始时间大于结束时间，请重选</string>
+    <string name="endtime_more_than_now">结束时间超过了当前时间</string>
+    <string name="sorry_your_search_did_not_match_any_alarm_info">抱歉，没有找到符合条件的告警信息</string>
+    <string name="no_device_available">没有可用的摄像头</string>
+    <string name="no_device_upgrad">没有可升级的摄像头</string>
+    <string name="no_device_upgrading">没有正在升级的摄像头</string>
+    <string name="alarm_item_time">时间：</string>
+    <string name="alarm_item_state">状态：</string>
+    <!-- xlistview start -->
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">努力加载中...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- xlistview end -->
+
+
+    <!-- 首选项 -->
+    <string name="preference_title">视频设置</string>
+    <string name="wifi_title">WIFI设置</string>
+    <string name="wifi_summary">是否只在wifi网络下使用您的摄像头</string>
+    <string name="screen_strategy_title">流量节省</string>
+    <string name="screen_strategy_summary">是否在黑屏和程序后台情况下关闭正在播放的视频</string>
+    <string name="xg_push_title">推送告警</string>
+    <string name="xg_push_summary">是否在程序关闭之后仍然接收告警信息</string>
+    <!-- more -->
+    <string name="more_title">更多</string>
+    <string name="more_check_app_update">检查更新</string>
+    <string name="more_problem_feedback">问题反馈</string>
+    <string name="more_about">关于</string>
+    <string name="more_send">发送反馈</string>
+    <string name="more_problem_content_hint">请对问题进行必要的描述</string>
+    <string name="more_problem_title_hint">您的联系方式（可选）</string>
+    <string name="more_about_version">当前版本：</string>
+    <string name="more_sure_update">确认更新</string>
+    <string name="more_newversoin">版本更新</string>
+    <string name="more_no_newverison">已经是最新版本</string>
+    <string name="more_thanks_for_feedback">已在后台发送反馈信息！</string>
+    <string name="more_feedback_err">抱歉，发送反馈信息失败！</string>
+    <string name="more_feedback_suc">反馈信息发送成功，感谢您对小末摄像头的关注！</string>
+    <string name="more_problem_describ_need">请对您的问题进行简要描述</string>
+    <string name="safe_center_title">安全中心</string>
+    <string name="safe_center_select">选择安全级别</string>
+    <string name="safe_center_display">自定义安全级别</string>
+    <string name="safe_level_sys_summ">预设级别</string>
+    <string name="safe_level_dis_summ">自定义级别</string>
+    <string name="allow_others_login">允许其他手机登录此账户</string>
+    <string name="allow_cloud_manage">允许音视频上传云端进行管理</string>
+    <string name="safe_select_query">当前安全级别将被设为:</string>
+    <string name="safe_level_delete">确认删除此级别吗？</string>
+    <string name="safe_name_your_level">请为您定义的安全级别命名</string>
+    <string name="safe_name_already_exist">此名称已经存在！请重新输入</string>
+    <string name="safe_add_ok">添加</string>
+    <string name="safe_level_delete_btn">删除</string>
+    <string name="safe_delete_suc">删除成功！</string>
+    <string name="safe_add_suc">添加成功！</string>
+    <string name="safe_name_not_null">名称不能为空</string>
+    <string name="safe_cur_level">当前级别：</string>
+    <string name="get_device_err_tip">重新加载小末摄像头...</string>
+    <string name="alarm_pic_rec_suc">告警图片下载成功！</string>
+    <string name="alarm_pic_rec_fai">告警图片下载失败！</string>
+    <!-- 过滤条件 用户允许输入的字符 都在这里 -->
+    <string name="filter_for_account_and_psw"> 	 ._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ@   </string>
+
+    <!-- intercom -->
+    <string name="no_device_playing">请先开始摄像头！</string>
+    <string name="device_is_already_open">摄像头的对讲功能正被使用!</string>
+    <string name="device_intercom_err">摄像头开启对讲失败！</string>
+    <string name="device_record_err">开启录像失败！</string>
+    <string name="device_stop_record_err">停止录像失败！，请重试！</string>
+    <string name="device_record_suc">录像成功，录像已保存在您的相册!</string>
+    <string name="device_capture_suc">截图成功，图片已保存在您的相册！</string>
+    <string name="device_capture_fai">截图失败，请重试！</string>
+    <string name="stream_switch_err">切换码流失败</string>
+    <string name="quality_mode">当前模式：高清</string>
+    <string name="fluency_mode">当前模式：标准</string>
+    <string name="adapter_mode">当前模式：自适应</string>
+    <string name="exiting">正在退出</string>
+    <string name="device_rename_suc">修改设备名成功</string>
+    <string name="device_rename_fai">修改设备名失败</string>
+    <string name="title_activity_add_device_without_tip">AddDeviceWithoutTip</string>
+    <string name="action_settings">Settings</string>
+    <string name="playback_complete">回放完毕！</string>
+    <string name="motion_offline">设备下线</string>
+	<string name="capture_info">正在处理上一次截图...</string>
+    <string name="capture_over_saving">截图成功，正在保存截图</string>
+    <string name="capture_over_saving_fai">保存截图失败</string>
+	
+	<string name="captureing">正在截图...</string>
+	<string name="capture_saving">正在保存截图</string>
+	<string name="capture">截图</string>
+	<string name="intercom_click_to">点击开始对讲</string>
+	<string name="recording">正在录像...</string>
+	<string name="record">录像</string>
+	
+	<string name="app_download_qr">小末二维码</string>
+	<string name="net_use_alarm">正在使用3G/4G网络播放，您的运营商可能会向您收取流量费用！</string>
+	<string name="purchase_camera">购买摄像头</string>
+	<string name="sorry_for_experience">抱歉，这是一个演示相机，您不能使用此功能！</string>
+	<string name="string_current_time">当前时间：</string>
+	
+	<string name="upgrade_app_cancel">不用</string>
+	<string name="upgrade_app_yes">立刻升级</string>
+	<string name="upgrade_app_nomore">不再提醒</string>
+	<string name="upgrade_tip">有新的App版本可以升级，新版本将有更好的操作体验，赶快试试把！</string>
+	<string name="filter_bytime">按时间筛选</string>
+	<string name="filter_bytype">按类型筛选</string>
+	
+	<string name="stateconfig_voice_config">摄像头语音提醒开关</string>
+	<string name="stateconfig_device_state">摄像头状态信息</string>
+	<string name="stateconfig_device_voidce_ctrl">摄像头音量调节</string>
+	<string name="stateconfig_device_light_switch">摄像头LED开关</string>
+	<string name="stateconfig_device_wifi_reconfig">摄像头wifi重新配置</string>
+	<string name="stateconfig_device_microphone_switch">摄像头麦克风开关</string>
+	<string name="stateconfig_device_upgrade">摄像头系统升级</string>
+	<string name="stateconfig_device_unbind">摄像头解除绑定</string>
+	<string name="filter_result">筛选结果</string>
+	<string name="canceling">正在取消</string>
+	<string name="can_not_goto_target_activity">抱歉，您的系统没有安装应用商店！</string>
+	<string name="can_not_realplay_before">抱歉，打开之前的实时视频失败了！</string>
+	
+	<string name="title_activity_device_manage_tab_host">DeviceManageTabHostActivity</string>
+    	<string name="title_activity_device_setting">DeviceSettingActivity</string>
+	<string name="download_progress">下载进度</string>
+	<string name="down">正在下载...</string>
+	<string name="sms_share">我正在使用小末app，你可以真正体验真正的全景视频。下载地址:http://www.showmo365.com/TemporaryFileDir/Android/showmo365_android.apk</string>
+	<string name="upgrade_ipc_tip">摄像头有新的版本可以升级！</string>
+	<string name="device_info">摄像机信息</string>
+    <string name="device_talk_volume">摄像机音量开关</string>
+    <string name="get_device_talk_volume">获取摄像机音量状态</string>
+     <string name="device_current_volume_state">摄像机音量的状态：</string>
+     <string name="device_current_volume">视频开启关闭提示音</string>
+     <string name="device_volume_info">摄像机声音信息</string>
+	<string name="dev_model">摄像机型号</string>
+    <string name="dev_connection_wifi">连接的WiFi</string>
+    <string name="wifi">WiFi</string>
+    <string name="dev_wifi_signal">WiFi信号强度</string>
+    <string name="system_version">系统版本</string>
+    <string name="ip_address">IP地址</string>
+    <string name="mac_address">MAC地址</string>
+    <string name="get_device_info_faile">由于网络原因，获取设备信息失败！</string>
+    <string name="modify_psw_old_not_eq_new">新旧密码不能一致！</string>
+    <string name="sorry_for_no_tf_when_alarm">抱歉,由于摄像头发生告警时没有TF卡，不支持这条告警数据的下载！</string>
+      <string name="sorry_for_no_tf_when_download">抱歉,由于摄像头没有TF卡，不支持这条告警数据的下载！</string>
+      <string name="sorry_for_no_alarm_pic">抱歉。没有找到该告警图片的数据</string>
+      <string name="close_volum_err">关闭播报开关失败</string>
+      <string name="open_volum_err">开启播报开关失败</string>
+</resources>

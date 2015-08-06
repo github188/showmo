@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_border1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:text="@string/add_device_name_device_dialog_title"
+        android:textColor="@android:color/black" />
+
+    <FrameLayout style="@style/style_main_page_menu_item_sparate_line" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_previou"
+            style="@style/style_add_device_set_wifi_btn"
+            android:text="@string/add_device_previous" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/style_add_device_set_wifi_btn"
+            android:text="@string/add_device_next" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 安全级别配置列表，默认有高，中，低  用户配置之后将其配置的信息保存到这个XML -->
+<set>
+
+    <Safe name="高" >
+
+        <allow_video_up_to_cloude type="boolean" >
+false
+        </allow_video_up_to_cloude>
+
+        <allow_others_loading_your_account type="boolean" >
+false
+        </allow_others_loading_your_account>
+    </Safe>
+
+    <Safe name="zhong" >
+
+        <allow_video_up_to_cloude type="boolean" >
+false
+        </allow_video_up_to_cloude>
+
+        <allow_others_loading_your_account type="boolean" >
+false
+        </allow_others_loading_your_account>
+    </Safe>
+
+</set>

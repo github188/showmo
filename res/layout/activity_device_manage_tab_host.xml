@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    tools:context="com.showmo.DeviceManageTabHostActivity" >
+ <include
+        android:id="@+id/lay_bar"
+        layout="@layout/titlebar_common" />
+    <TextView
+        android:id="@+id/tv_dev_no_device_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_device_available"
+        style="@style/style_showmo_text_medium"
+        android:visibility="gone" />
+                    <ListView
+        				android:id="@+id/lv_dev_list"
+        				android:layout_width="match_parent"
+        				android:layout_height="match_parent"
+       					
+        				android:divider="#c0c0c0"
+       					android:dividerHeight="0.7dp" >
+    				</ListView>
+  
+              
+
+</LinearLayout>

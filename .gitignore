@@ -1,5 +1,6 @@
-# Compiled
-*.elc
-
-# Packaging
-.cask
+# Eclipse specific files/directories
+.classpath
+.project
+.settings
+.metadata
+bin/

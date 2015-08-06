@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar_common" />
+
+    <FrameLayout style="@style/more_seperator_line" />
+
+    <RelativeLayout
+        android:id="@+id/goto_update"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/more_item_text"
+            android:text="@string/more_check_app_update" />
+
+        <ImageView
+            android:id="@+id/to_check_update_src"
+            style="@style/more_item_goto" />
+
+        <TextView
+            android:id="@+id/cur_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/to_check_update_src"
+            android:text="1.0.0.2"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <FrameLayout style="@style/more_seperator_line" />
+
+    <RelativeLayout
+        android:id="@+id/goto_problem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/more_item_text"
+            android:text="@string/more_problem_feedback" />
+
+        <ImageView style="@style/more_item_goto" />
+    </RelativeLayout>
+<FrameLayout style="@style/more_seperator_line" />
+    
+    <FrameLayout style="@style/more_seperator_line" />
+
+    <RelativeLayout
+        android:id="@+id/goto_about"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/more_item_text"
+            android:text="@string/more_about" />
+
+        <ImageView style="@style/more_item_goto" />
+    </RelativeLayout>
+    
+    
+
+    <FrameLayout style="@style/more_seperator_line" />
+
+</LinearLayout>
